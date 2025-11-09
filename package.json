@@ -1,0 +1,16 @@
+{
+  "name": "mn-formbuilder",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@10.5.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "dev:api": "npm --prefix apps/api run start:dev",
+    "lint": "npm --prefix apps/web run lint && npm --prefix apps/api run lint",
+    "test": "npm --prefix apps/api run test"
+  }
+}
